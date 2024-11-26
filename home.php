@@ -15,6 +15,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <style>
+        .typing {
+      font-size: 1rem;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    }
+
+    /* Keyframes for Typing Animation */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    /* Keyframes for Blink Cursor */
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+    </style>
 </head>
 
 <body>
@@ -41,9 +67,10 @@
     <div id="home" class="d-flex align-items-center justify-content-center" style="height: 100vh;">
         <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Learning" class="img-fluid" style="position: absolute; z-index: -1; width: 100vw;height: 100vh;" />
-        <div class="text-center p-2" style="width: 30%;">
+        <div class="text-center p-2">
             <p class="text-primary">
-                <strong>Hello, <br />This is developed for learning crud operations.</strong>
+                <strong>Hello,<br />
+                <span class="typing">This is developed for learning crud operations.</span></strong>
             </p>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">Login</button>        
         </div>
